@@ -19,14 +19,19 @@ for (let i = 0; i < numberOfFilms; i++) {
     }
 }
 
-if (personalMovieDb.count < 10) {
-    console.log('Çox az filmə baxmısınız.');
-} else if (personalMovieDb.count < 30) {
-    console.log('Klassik film izləyicisi.');
-} else if (personalMovieDb.count > 30) {
-    console.log('Siz kinomansınız.');
-} else {
-    'Səhv baş verdi.'
-}
+// if (personalMovieDb.count < 10) {
+//     console.log('Çox az filmə baxmısınız.');
+// } else if (personalMovieDb.count < 30) {
+//     console.log('Klassik film izləyicisi.');
+// } else if (personalMovieDb.count > 30) {
+//     console.log('Siz kinomansınız.');
+// } else {
+//     console.log('Səhv baş verdi.');
+// }
+
+personalMovieDb.count < 10 ? console.log('Çox az filmə baxmısınız.')
+    : personalMovieDb.count < 30 ? console.log('Klassik film izləyicisi.')
+        : personalMovieDb.count > 30 ? console.log('Siz kinomansınız.')
+            : console.log('Səhv baş verdi.');
 
 console.log(personalMovieDb);
